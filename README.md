@@ -18,28 +18,28 @@ Your application should have the following routes:
 **`GET /items`** - this should render a list of shopping items.
 Here is what a response looks like:
 
-```json
+```javascript
 [{“name”: “popsicle”, “price”: 1.45}, {“name”:”cheerios”, “price”: 3.40}]
 ```
 
 **`POST /items`** - this route should accept JSON data and add it to the shopping list.
 Here is what a sample request/response looks like:
 
-```json
+```javascript
 {“name”:”popsicle”, “price”: 1.45} => {“added”: {“name”: “popsicle”, “price”: 1.45}}
 ```
 
 **`GET /items/:name`** - this route should display a single item’s name and price.
 Here is what a sample response looks like:
 
-```json
+```javascript
 {“name”: “popsicle”, “price”: 1.45}
 ```
 
 **`PATCH /items/:name`**, this route should modify a single item’s name and/or price.
 Here is what a sample request/response looks like:
 
-```json
+```javascript
 {“name”:”new popsicle”, “price”: 2.45} => {“updated”: {“name”: “new popsicle”, “price”: 2.45}}
 ```
 
@@ -47,7 +47,7 @@ Here is what a sample request/response looks like:
 
 Here is what a sample response looks like:
 
-```json
+```javascript
 {message: "Deleted"}
 ```
 **Please make use of the Express Router**.
